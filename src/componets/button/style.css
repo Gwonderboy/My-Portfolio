@@ -1,0 +1,29 @@
+.primary_Btn {
+    position: relative;
+    background: transparent !important;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #fff !important;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0 !important;
+  }
+  
+  .primary_Btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+  
+  .primary_Btn:hover::after {
+    width: 100%;
+  }
+  
+  .primary_Btn:hover {
+    color: #fff; /* Optional color change on hover */
+  }

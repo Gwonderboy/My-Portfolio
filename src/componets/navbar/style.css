@@ -1,0 +1,12 @@
+.nav_links::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #0a5fe4;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+  }
+  .nav_links:hover::after {
+    width: 100%;
+  }
